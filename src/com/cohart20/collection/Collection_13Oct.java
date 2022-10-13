@@ -1,6 +1,5 @@
 package com.cohart20.collection;
 
-
 import java.util.ArrayList;
 
 public class Collection_13Oct {
@@ -8,29 +7,118 @@ public class Collection_13Oct {
 	public static void main(String[] args) {
 
 
-		ArrayList values = new ArrayList();
-
-		values.add(1212);   
-
-		values.add(true);
-
-		values.add("Gedas");     values.add("Adam");
-
-		for(int i = 0; i < values.size(); i++) {
-
-			System.out.println(values.get(i));
-		}
-
-		values.set(1, "Ali");//set(int index, Element e) is used to replace op over-write the element in the middle of the 
-								//ArrayList since the first argument of the set() method takes index and the second argument as the 
-								//Element which you wish to add. So it will take the place of the pre-occupied index by over-writing it.... 
-
-		for(int i = 0; i < values.size(); i++) {
-
-			System.out.println(values.get(i));
-		}
+		
+		
 	}
+
+
 }
+
+//First write the POJO class for Employees with attributes as empId, fName, lName, email, salary with al the setters and getters,
+//parameterized constructor as well as no-arg since no-arg constructor is advised to have even though you do not use it..
+//Create 4-5 Employees objects and keep it in the ArrayList. And then, you have to display all the Employees details with their Bonus amount...
+//terms to calculate the bonus amount- if user workX is less than 2 years then bonus amount should be 50% of the salary
+//if the workX is more than 2 years then the calculated bonus amount would be 100%... 
+
+
+//import java.util.ArrayList;
+//
+//public class Collection_13Oct {
+//
+//	public static void main(String[] args) {
+//
+//
+//		ArrayList<Integer> values = new ArrayList<Integer>();//here I am creating ArrayList object as limited to only Integer...That mean
+//														//ArrayList can hold only String elements else will receive syntax error. So
+//														// its a good practice to make any Collection with generic type like String
+//												//Integer, Human, Polo....
+//		
+//		values.add(6546);
+//		
+//		values.add(9879);
+//		
+//		values.add(23132);
+//		
+//		for(int i = 0; i < values.size(); i++) {//This is classic for loop
+//			
+//			System.out.println(values.get(i));
+//		}
+//		
+//		//=================Enhanced for loop for collection iteration=========
+//		
+//		for(int value : values) {
+//			System.out.println(value+10);
+//		}
+//		
+//	}
+//
+//
+//}
+//import java.util.ArrayList;
+//
+//public class Collection_13Oct {
+//
+//	public static void main(String[] args) {
+//
+//
+//		ArrayList<String> values = new ArrayList<String>();//here I am creating ArrayList object as limited to only String...That mean
+//														//ArrayList can hold only String elements else will receive syntax error. So
+//														// its a good practice to make any Collection with generic type like String
+//														//Integer, Human, Polo....
+//
+////		values.add(1212); //this line is illegal here since I have created ArrayList object generic String so I must not add any other type
+//							//of data...
+////
+////		values.add(true);//This is illegal also
+//
+//		values.add("Gedas");     values.add("Adam");
+//
+//		for(int i = 0; i < values.size(); i++) {
+//
+//			System.out.println(values.get(i));
+//		}
+//
+//		values.set(1, "Ali");//set(int index, Element e) is used to replace op over-write the element in the middle of the 
+//								//ArrayList since the first argument of the set() method takes index and the second argument as the 
+//								//Element which you wish to add. So it will take the place of the pre-occupied index by over-writing it.... 
+//
+//		for(int i = 0; i < values.size(); i++) {
+//
+//			System.out.println(values.get(i));
+//		}
+//	}
+//}
+
+//import java.util.ArrayList;
+//
+//public class Collection_13Oct {
+//
+//	public static void main(String[] args) {
+//
+//
+//		ArrayList values = new ArrayList();
+//
+//		values.add(1212);   
+//
+//		values.add(true);
+//
+//		values.add("Gedas");     values.add("Adam");
+//
+//		for(int i = 0; i < values.size(); i++) {
+//
+//			System.out.println(values.get(i));
+//		}
+//
+//		values.set(1, "Ali");//set(int index, Element e) is used to replace op over-write the element in the middle of the 
+//								//ArrayList since the first argument of the set() method takes index and the second argument as the 
+//								//Element which you wish to add. So it will take the place of the pre-occupied index by over-writing it.... 
+//
+//		for(int i = 0; i < values.size(); i++) {
+//
+//			System.out.println(values.get(i));
+//		}
+//	}
+//}
 
 
 //import java.util.ArrayList;
