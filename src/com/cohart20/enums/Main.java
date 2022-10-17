@@ -1,25 +1,85 @@
 package com.cohart20.enums;
 
-enum Direction {
-
-
-	EAST, WEST, NORTH, SOUTH;
+enum Beer {
+	
+	FOSTER(5, "yellowish"), MAGNUM(7, "Orange"), kINGFISHER(4, "black");
+	
+	int price;
+	String color;
+	
+	Beer(int price, String color) {
+		this.price = price;
+		this.color = color;
+	}
 }
+
+enum Month {
+	JANUARY(31), FEBRUARY(28), MARCH(31), APRIL(30), MAY(31), JUNE(30), JULY(31), AUGUST(31), SEPTEMBER(30), OCTOBER(31), NOVEMBER(30), DECEMBER(31);
+	
+	int days;
+	
+	Month(int days) {
+		this.days = days;
+	}
+}
+
 
 
 public class Main {
-
+	
 	public static void main(String[] args) {
-
-		Direction[] directions = Direction.values();
-
-		for(Direction direction : directions) {
-
-			System.out.println(direction);
-		}
+		
+		Beer b1 = Beer.FOSTER;
+		
+		System.out.println(b1.price);
+		System.out.println(b1.color);
+		
+	//Beer b = new Beer(12, "34534");//This is illegal which means you can not create object of enum no matter whether it is no-arg constructor ot with parameterized constructor
+	
+		Month m1 = Month.JANUARY;
+		
+		System.out.println(m1.days);
+		
 
 	}
 }
+
+
+//public class Main {
+//
+//	enum Direction {//You can declare enum in the class itself and this is legal...
+//
+//		EAST, WEST, NORTH, SOUTH;
+//	}
+//	
+//	public static void main(String[] args) {
+//
+//		Direction d = Direction.EAST;//Accessing enum values will be same even if you declare enum inside the class itself
+//
+//	}
+//}
+
+
+//enum Direction {
+//
+//
+//	EAST, WEST, NORTH, SOUTH;
+//}
+//
+//
+//public class Main {
+//
+//	public static void main(String[] args) {
+//
+//		Direction[] directions = Direction.values();
+//
+//		for(Direction direction : directions) {
+//
+//			System.out.println(direction);
+//		}
+//
+//	}
+//}
 
 
 //enum Direction {
